@@ -1,0 +1,9 @@
+RSA Encryption
+1. RSA involved modular exponentiation, which is raising a number to a certain power,then taking the remainder of the division by another number.
+1a. The function pow(base, exponent, modulus), helps you calculate this
+2. In RSA, Modular exponentiation, together with prime facorization, helps create a trapdoor function. Something that is easy to computer in one direction, but hard to reverse unless you have the right information (the key!)
+3. RSA encryption is modular exponentiation of a message with an exponent e and a modulus NN which is normally a product of two primes: N=p⋅q
+4. Together, the exponent and modulus form an RSA "public key" The most common value for e is 0x10001 or 6553765537
+5. If the prime factors of the product N can be deduced, you can calculate the Euler's totient of N to assist in getting the key to decrypt the message.
+6. By taking the modular multiplicative inverse of the exponent e (e squared by -1) modulo ϕ(N), you can discover the private key to decrypt the message
+6a. use pow(e, -1, modulus) to do this!
