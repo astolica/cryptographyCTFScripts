@@ -1,5 +1,3 @@
-from sympy import totient
-
 """
  RSA relies on the difficulty of the modulus N 
  If the prime factors can be found out, you can calculate 
